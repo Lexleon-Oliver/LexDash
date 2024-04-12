@@ -3,6 +3,7 @@ import { RouterOutlet } from '@angular/router';
 import { HeaderComponent } from './components/header/header.component';
 import { ThemesService } from './services/themes.service';
 import { ThemeItem } from './models/theme-item';
+import { SidebarComponent } from './components/sidebar/sidebar.component';
 
 @Component({
   selector: 'app-root',
@@ -10,6 +11,7 @@ import { ThemeItem } from './models/theme-item';
   imports: [
     RouterOutlet,
     HeaderComponent,
+    SidebarComponent,
 
   ],
   templateUrl: './app.component.html',
