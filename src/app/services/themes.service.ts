@@ -10,7 +10,6 @@ export class ThemesService {
     {text: "Claro",  value: "light-theme"},
     {text: "Escuro",  value: "dark-theme"},
     {text: "Azul",  value: "blue-theme"},
-    {text: "Roxo",  value: "purple-theme"},
   ];
 
   private selectedTheme!: ThemeItem;
