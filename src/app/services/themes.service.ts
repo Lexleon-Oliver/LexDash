@@ -10,7 +10,6 @@ export class ThemesService {
     {text: "Claro",  value: "light-theme"},
     {text: "Escuro",  value: "dark-theme"},
     {text: "Azul",  value: "blue-theme"},
-    {text: "Roxo",  value: "purple-theme"},
   ];
 
   private selectedTheme!: ThemeItem;
@@ -28,11 +27,13 @@ export class ThemesService {
   setSelectedTheme(theme: ThemeItem): void {
     this.selectedTheme = theme;
 
-    // Remove todas as classes de tema existentes do corpo
-    document.body.classList.remove(...this.themes.map(t => t.value));
+    if (typeof document!== 'undefined') {
+      // Remove todas as classes de tema existentes do corpo
+      document.body.classList.remove(...this.themes.map(t => t.value));
 
-    // Adiciona a classe de tema selecionada ao corpo
-    document.body.classList.add(theme.value);
+      // Adiciona a classe de tema selecionada ao corpo
+      document.body.classList.add(theme.value);
+    }
   }
 
   getSelectedTheme(): ThemeItem {
@@ -41,6 +42,10 @@ export class ThemesService {
 
   getThemes(): ThemeItem[] {
     return this.themes;
+  }
+
+  getThemeByText(themeText: string): ThemeItem  {
+    return this.themes.find(theme => theme.text === themeText) || this.themes[0];
   }
 
 }

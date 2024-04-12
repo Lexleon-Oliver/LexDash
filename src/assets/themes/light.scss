@@ -1,0 +1,118 @@
+:root {
+  --primary-color-light: #f6f9ff;
+  --secondary-color-light: #444444;
+  --tertiary-color-light: #4154f1;
+  --quaternary-color-light: #717ff5;
+  --quinary-color-light: #a5c5fe;
+  --sixthary-color-light: #919191;
+
+  --box-shadow-dropdown-menu: rgba(82, 63, 105, 0.2);
+  --box-shadow-header: rgba(1, 41, 112, 0.1);
+
+  --branco-puro: #ffffff;
+  --cinza-pastel: #eaedf1;
+  --azul-marinho: #012970;
+}
+
+.light-theme{
+  background-color: var(--primary-color-light);
+  color: var(--secondary-color-light);
+}
+
+.light-theme a{
+  color: var(--tertiary-color-light);
+}
+
+.light-theme a:hover{
+  color: var(--quaternary-color-light);
+}
+
+.light-theme .dropdown-menu{
+  box-shadow: var(--box-shadow-dropdown-menu);
+}
+
+.light-theme .dropdown-menu .dropdown-footer a {
+  color: var(--secondary-color-light);
+}
+
+.light-theme .dropdown-menu .dropdown-divider {
+  color: var(--quinary-color-light)
+}
+
+.light-theme .dropdown-menu .dropdown-item {
+  color: var(--secondary-color-light);
+}
+
+@media (min-width: 768px) {
+  .light-theme .dropdown-menu-arrow::before {
+
+    background: var(--branco-puro);
+    border-top: var(--cinza-pastel);
+    border-left: var(--cinza-pastel);
+  }
+}
+
+.light-theme .header .toggle-sidebar-btn {
+  color: var(--azul-marinho);
+}
+
+.light-theme .header {
+  background-color: var(--branco-puro);
+  box-shadow: var(--box-shadow-header)
+}
+
+.light-theme .logo img {
+  border:solid var(--azul-marinho);
+}
+
+.light-theme .logo span {
+  color: var(--azul-marinho);
+}
+
+.light-theme .header-nav .nav-icon {
+  color: var(--azul-marinho);
+
+}
+
+.light-theme .notification-item p {
+  color: var(--sixthary-color-light);
+}
+
+.light-theme .nav-profile {
+  color: var(--azul-marinho);
+}
+
+.light-theme .profile .dropdown-header h6 {
+  color: var(--secondary-color-light);
+}
+
+.light-theme .bi-palette{
+  color: var(--azul-marinho);
+}
+
+.light-theme .header-nav .nav-link:hover {
+  color: var(--quaternary-color-light);
+}
+
+.light-theme .header-nav .nav-item i:hover {
+  color: var(--quaternary-color-light);
+}
+
+.light-theme .toggle-sidebar-btn:hover{
+  color: var(--quaternary-color-light);
+}
+
+.light-theme .dropdown-menu .dropdown-item:hover {
+  background-color: var(--quinary-color-light);
+}
+
+.light-theme .notification-item:hover {
+  background-color: var(--quinary-color-light);
+}
+
+
+
+
+
+
+

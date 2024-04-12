@@ -1,0 +1,116 @@
+:root {
+  --primary-color-blue: #001f3f; /* Azul escuro profundo para principal */
+  --secondary-color-blue: #e0e0e0; /* Um tom claro de cinza para secundário */
+  --tertiary-color-blue: #0044cc; /* Azul brilhante para terciário */
+  --quaternary-color-blue: #003399; /* Azul médio para quaternário */
+  --quinary-color-blue: #0066cc; /* Azul mais claro para quinário */
+  --sixthary-color-blue: #b3b3ff; /* Azul claro para sextário */
+
+  --box-shadow-dropdown-menu-blue: rgba(0, 0, 0, 0.2); /* Sombra para menu suspenso */
+  --box-shadow-header-blue: rgba(255, 255, 255, 0.1); /* Sombra para cabeçalho */
+
+  --cinza-pastel-blue: #434343;
+  --golden-blue: #FFD484;
+}
+
+
+
+.blue-theme{
+  background-color: var(--primary-color-blue);
+  color: var(--secondary-color-blue);
+}
+
+.blue-theme a{
+  color: var(--tertiary-color-blue);
+}
+
+.blue-theme a:hover{
+  color: var(--quaternary-color-blue);
+}
+
+.blue-theme .dropdown-menu{
+  box-shadow: var(--box-shadow-dropdown-menu-blue);
+  background-color: var(--primary-color-blue);
+  color: var(--secondary-color-blue);
+}
+
+.blue-theme .dropdown-menu .dropdown-footer a {
+  color: var(--secondary-color-blue);
+}
+
+.blue-theme .dropdown-menu .dropdown-divider {
+  color: var(--quinary-color-blue)
+}
+
+.blue-theme .dropdown-menu .dropdown-item {
+  color: var(--secondary-color-blue);
+}
+
+@media (min-width: 768px) {
+  .blue-theme .dropdown-menu-arrow::before {
+
+    background: var(--primary-color-blue);
+    border-top: var(--cinza-pastel-blue);
+    border-left: var(--cinza-pastel-blue);
+  }
+}
+
+.blue-theme .header .toggle-sidebar-btn {
+  color: var(--golden-blue);
+}
+
+.blue-theme .header {
+  background-color: var(--primary-color-blue);
+  box-shadow: var(--box-shadow-header-blue)
+}
+
+.blue-theme .logo img {
+  border:solid var(--golden-blue);
+  background-color: var(--secondary-color-blue);
+}
+
+.blue-theme .logo span {
+  color: var(--golden-blue);
+}
+
+.blue-theme .header-nav .nav-icon {
+  color: var(--golden-blue);
+
+}
+
+.blue-theme .notification-item p {
+  color: var(--sixthary-color-blue);
+}
+
+.blue-theme .nav-profile {
+  color: var(--golden-blue);
+}
+
+.blue-theme .profile .dropdown-header h6 {
+  color: var(--secondary-color-blue);
+}
+
+.blue-theme .bi-palette{
+  color: var(--golden-blue);
+}
+
+.blue-theme .toggle-sidebar-btn:hover{
+  color: var(--quaternary-color-blue);
+}
+
+
+.blue-theme .header-nav .nav-link:hover {
+  color: var(--quaternary-color-blue);
+}
+
+.blue-theme .header-nav .nav-item i:hover {
+  color: var(--quaternary-color-blue);
+}
+
+.blue-theme .dropdown-menu .dropdown-item:hover {
+  background-color: var(--quaternary-color-blue);
+}
+
+.blue-theme .notification-item:hover {
+  background-color: var(--quaternary-color-blue);
+}
