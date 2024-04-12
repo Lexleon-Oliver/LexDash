@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { HeaderComponent } from './components/header/header.component';
+import { ThemesService } from './services/themes.service';
+import { ThemeItem } from './models/theme-item';
 
 @Component({
   selector: 'app-root',
@@ -15,4 +17,13 @@ import { HeaderComponent } from './components/header/header.component';
 })
 export class AppComponent {
   title = 'LexDash';
+  defaultTheme!: ThemeItem;
+
+  constructor(
+    private themesService:ThemesService
+  ){
+    this.defaultTheme= themesService.getThemeByText('Claro');
+    themesService.setSelectedTheme(this.defaultTheme);
+
+  }
 }
