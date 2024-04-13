@@ -176,5 +176,72 @@
   color: var(--quinary-color-dark);
 }
 
+.dark-theme .footer .copyright {
+  color: var(--azul-claro-dark);
+}
+
+.dark-theme .footer a {
+  color: var(--tertiary-color-dark);
+}
+
+.dark-theme #title {
+  color:var(--preto-puro-dark);
+}
+
+.dark-theme .circles p {
+	color: var(--preto-puro-dark);
+}
+
+.dark-theme .circles .circle.small {
+	background: var(--tertiary-color-dark);
+}
+
+.dark-theme .circles .circle.med {
+	background: var(--tertiary-color-dark);
+}
+
+.dark-theme .circles .circle.big {
+	background: var(--tertiary-color-dark);
+}
+
+.dark-theme .back-to-top {
+  background: var(--azul-claro-dark);
+}
+
+.dark-theme .back-to-top i {
+  color: var(--preto-puro-dark);
+}
+
+.dark-theme .back-to-top:hover {
+  background: var(--tertiary-color-dark);
+  color: var(--preto-puro-dark);
+}
+
+.dark-theme .pagetitle h1 {
+  color: var(--azul-claro-dark);
+}
+
+.dark-theme .breadcrumb a:hover {
+  color: var(--quinary-color-dark);
+}
+
+.dark-theme .breadcrumb .active {
+  color: var(--azul-claro-dark);
+}
+
+.dark-theme .breadcrumb .breadcrumb-item::before {
+  color: var(--sixthary-color-dark);
+}
+
+.dark-theme .breadcrumb {
+  color: var(--secondary-color-dark);
+}
+
+.dark-theme .breadcrumb a {
+  color: var(--secondary-color-dark);
+}
+
+
+
 
 

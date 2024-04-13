@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 import { LogoComponent } from '../logo/logo.component';
 import { NavHeaderComponent } from '../nav-header/nav-header.component';
 
@@ -13,5 +13,6 @@ import { NavHeaderComponent } from '../nav-header/nav-header.component';
   styleUrl: './header.component.scss'
 })
 export class HeaderComponent {
+
 
 }

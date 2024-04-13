@@ -171,9 +171,71 @@
   color: var(--quinary-color-light);
 }
 
+.light-theme .footer .copyright {
+  color: var(--azul-marinho);
+}
+
+.light-theme .footer a {
+  color: var(--tertiary-color-light);
+}
+
+.light-theme #title {
+  color:var(--branco-puro);
+}
+
+.light-theme .circles p {
+	color: var(--branco-puro);
+}
+
+.light-theme .circles .circle.small {
+	background: var(--tertiary-color-light);
+}
+
+.light-theme .circles .circle.med {
+	background: var(--tertiary-color-light);
+}
+
+.light-theme .circles .circle.big {
+	background: var(--tertiary-color-light);
+}
+
+.light-theme .back-to-top {
+  background: var(--azul-marinho);
+}
+
+.light-theme .back-to-top i {
+  color: var(--branco-puro);
+}
+
+.light-theme .back-to-top:hover {
+  background: var(--tertiary-color-light);
+  color: var(--branco-puro);
+}
 
 
+.light-theme .pagetitle h1 {
+  color: var(--azul-marinho);
+}
 
+.light-theme .breadcrumb a:hover {
+  color: var(--quinary-color-light);
+}
+
+.light-theme .breadcrumb .active {
+  color: var(--azul-marinho);
+}
+
+.light-theme .breadcrumb .breadcrumb-item::before {
+  color: var(--sixthary-color-light);
+}
+
+.light-theme .breadcrumb {
+  color: var(--secondary-color-light);
+}
+
+.light-theme .breadcrumb a {
+  color: var(--secondary-color-light);
+}
 
 
 

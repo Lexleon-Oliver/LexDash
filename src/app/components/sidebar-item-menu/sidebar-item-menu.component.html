@@ -1,6 +1,6 @@
 
 <li class="nav-item">
-  <a class="nav-link collapsed" [attr.data-bs-target]="'#' + itemMenu.id" data-bs-toggle="collapse" href="#">
+  <a class="nav-link collapsed elemento-clicavel" [attr.data-bs-target]="'#' + itemMenu.id" data-bs-toggle="collapse" (click)="!itemMenu.submenus.length && menuItemClicked()">
     <i class="{{itemMenu.icon}}"></i><span>{{itemMenu.label}}</span>
     @if (itemMenu.submenus.length>0) {
       <i class="bi bi-chevron-down ms-auto"></i>

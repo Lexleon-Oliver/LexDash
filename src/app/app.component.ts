@@ -4,6 +4,8 @@ import { HeaderComponent } from './components/header/header.component';
 import { ThemesService } from './services/themes.service';
 import { ThemeItem } from './models/theme-item';
 import { SidebarComponent } from './components/sidebar/sidebar.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { ButtonUpComponent } from './components/button-up/button-up.component';
 
 @Component({
   selector: 'app-root',
@@ -12,6 +14,8 @@ import { SidebarComponent } from './components/sidebar/sidebar.component';
     RouterOutlet,
     HeaderComponent,
     SidebarComponent,
+    FooterComponent,
+    ButtonUpComponent,
 
   ],
   templateUrl: './app.component.html',

@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { ReloadService } from '../../services/reload.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-logo',
@@ -11,11 +12,13 @@ import { ReloadService } from '../../services/reload.service';
 export class LogoComponent {
 
   constructor(
-    private reloadService:ReloadService
+    private reloadService:ReloadService,
+    private router : Router
+
   ){}
 
-  onHome() {
-    this.reloadService.reloadPage();
+  goHome() {
+    this.router.navigate(['home']);
   }
 
   toggleSidebar() {

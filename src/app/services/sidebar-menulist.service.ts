@@ -1,10 +1,17 @@
 import { Injectable } from '@angular/core';
 import { ItemMenu } from '../models/item-menu';
+import { Router } from '@angular/router';
 
 @Injectable({
   providedIn: 'root'
 })
 export class SidebarMenulistService {
+
+  constructor(
+    private router: Router,
+  ){
+
+  }
 
   private menuList:ItemMenu[] = [
     {
@@ -14,23 +21,25 @@ export class SidebarMenulistService {
       submenus: []
     },
     {
-      id:"components-nav",
-      label: "Components",
-      icon: "bi bi-menu-button-wide",
+      id:"users-nav",
+      label: "Usuários",
+      icon: "bi bi-person",
       submenus:[
         {
-          label: "Alerts",
-          url: "/alerts"
+          label: "Notificações",
+          url: "/notifications"
         }
       ]
     },
 
   ];
 
-  constructor() { }
-
   getMenuList():ItemMenu[]{
     return this.menuList;
+  }
+
+  goToUrl(url: string){
+    this.router.navigate([url]);
   }
 
 }

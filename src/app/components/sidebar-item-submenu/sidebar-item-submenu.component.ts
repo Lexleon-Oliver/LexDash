@@ -1,5 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { ItemSubmenu } from '../../models/item-submenu';
+import { SidebarMenulistService } from '../../services/sidebar-menulist.service';
 
 @Component({
   selector: 'app-sidebar-item-submenu',
@@ -12,7 +13,12 @@ export class SidebarItemSubmenuComponent {
 
   @Input() submenu!: ItemSubmenu;
 
-  constructor(){
+  constructor(
+    private sidebarService: SidebarMenulistService
+  ){
   }
 
+  redirect() {
+   this.sidebarService.goToUrl(this.submenu.url);
+  }
 }

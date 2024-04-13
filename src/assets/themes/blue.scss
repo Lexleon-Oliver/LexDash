@@ -13,8 +13,6 @@
   --golden-blue: #FFD484;
 }
 
-
-
 .blue-theme{
   background-color: var(--primary-color-blue);
   color: var(--secondary-color-blue);
@@ -175,4 +173,69 @@
 
 .blue-theme .sidebar-nav .nav-heading {
   color: var(--quinary-color-blue);
+}
+
+.blue-theme .footer .copyright {
+  color: var(--golden-blue);
+}
+
+.blue-theme .footer a {
+  color: var(--tertiary-color-blue);
+}
+
+.blue-theme #title {
+  color:var(--primary-color-blue);
+}
+
+.blue-theme .circles p {
+	color: var(--primary-color-blue);
+}
+
+.blue-theme .circles .circle.small {
+	background: var(--tertiary-color-blue);
+}
+
+.blue-theme .circles .circle.med {
+	background: var(--tertiary-color-blue);
+}
+
+.blue-theme .circles .circle.big {
+	background: var(--tertiary-color-blue);
+}
+
+.blue-theme .back-to-top {
+  background: var(--tertiary-color-blue);
+}
+
+.blue-theme .back-to-top i {
+  color: var(--golden-blue);
+}
+
+.blue-theme .back-to-top:hover {
+  background: var(--quinary-color-blue);
+  color: var(--golden-blue);
+}
+
+.blue-theme .pagetitle h1 {
+  color: var(--golden-blue);
+}
+
+.blue-theme .breadcrumb a:hover {
+  color: var(--quinary-color-blue);
+}
+
+.blue-theme .breadcrumb .active {
+  color: var(--golden-blue);
+}
+
+.blue-theme .breadcrumb .breadcrumb-item::before {
+  color: var(--sixthary-color-blue);
+}
+
+.blue-theme .breadcrumb {
+  color: var(--secondary-color-blue);
+}
+
+.blue-theme .breadcrumb a {
+  color: var(--secondary-color-blue);
 }
