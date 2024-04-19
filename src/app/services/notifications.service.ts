@@ -61,5 +61,16 @@ export class NotificationsService {
     }
   }
 
+  //return the number of unreaded notifications
+  getUnreadedNotificationsSize(): number{
+    let unreadedNotificationsSize = 0;
+    for (let i = 0; i < this.notificationList.length; i++) {
+      if (!this.notificationList[i].readed) {
+        unreadedNotificationsSize++;
+      }
+    }
+    return unreadedNotificationsSize;
+  }
+
 
 }
