@@ -1,0 +1,28 @@
+<app-page-layout
+  divisor="'•'"
+  [pageTitle]="{
+    titulo: 'Cards',
+    itemMenu:'Componentes',
+    itemSubmenu:'Cards',
+    alignment:'center',
+    homeIcon: true,
+    homeText: 'Início',
+  }"
+  [columnClass]="'col-lg-12'"
+>
+<div class="col-lg-6">
+  <app-card
+  [card]="{
+    header: 'Header Card',
+    title: 'Title Card',
+    subtitle: 'Subtitle Card',
+    content: 'Content Card ',
+    footer: 'Footer Card',
+  }"
+    ></app-card>
+
+  </div>
+
+
+</app-page-layout>
+

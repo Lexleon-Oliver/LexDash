@@ -19,6 +19,6 @@ export class SidebarItemSubmenuComponent {
   }
 
   redirect() {
-   this.sidebarService.goToUrl(this.submenu.url);
+    this.sidebarService.goToUrl(this.submenu.url);
   }
 }

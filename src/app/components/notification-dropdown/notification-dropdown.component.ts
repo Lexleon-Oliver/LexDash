@@ -25,6 +25,6 @@ export class NotificationDropdownComponent {
   }
 
   viewAllNotifications() {
-    this.router.navigate(['notifications']);
+    this.router.navigate(['users/notifications']);
   }
 }

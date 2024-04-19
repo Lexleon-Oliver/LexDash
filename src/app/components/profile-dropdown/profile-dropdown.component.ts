@@ -26,6 +26,11 @@ export class ProfileDropdownComponent {
         url: "/profile"
       },
       {
+        icon: 'bi bi-bell',
+        label: 'Minhas notificações',
+        url: '/users/notifications'
+      },
+      {
         icon:"bi bi-gear",
         label:"Configurações",
         url: "/configurations"

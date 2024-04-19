@@ -14,6 +14,15 @@
   --azul-claro-dark: #789cc0; /* Um azul claro */
 }
 
+.dark-theme h1,
+.dark-theme h2,
+.dark-theme h3,
+.dark-theme h4,
+.dark-theme h5,
+.dark-theme h6 {
+  color: white;
+}
+
 
 .dark-theme{
   background-color: var(--primary-color-dark);
@@ -240,6 +249,44 @@
 .dark-theme .breadcrumb a {
   color: var(--secondary-color-dark);
 }
+
+.dark-theme .item-notification{
+  color: var(--sixthary-color-dark);
+}
+
+
+.dark-theme .not-lida p,
+.dark-theme .not-lida small {
+  color: var(--tertiary-color-dark);
+}
+
+.dark-theme .card-title {
+  color: var(--azul-claro-dark);
+}
+
+.dark-theme .card-header,
+.dark-theme .card-body,
+.dark-theme .card-footer {
+  border-color: var(--cinza-pastel-dark);
+  background-color: var(--preto-puro-dark);
+  color: var(--quinary-color-dark);
+}
+
+.dark-theme .card {
+  box-shadow: 0px 0 30px var(--box-shadow-header);
+}
+
+.dark-theme .card-subtitle-custom{
+  color: var(--secondary-color-dark);
+}
+
+.dark-theme .item-notification{
+  background-color: var(--preto-puro-dark);
+}
+
+
+
+
 
 
 

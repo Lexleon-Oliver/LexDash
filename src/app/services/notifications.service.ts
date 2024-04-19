@@ -29,7 +29,7 @@ export class NotificationsService {
       content:"Quae dolorem earum veritatis oditseno",
       dateTime: "há 2 hrs.",
       icon:"bi bi-check-circle text-success",
-      readed: false
+      readed: true
     },
     {
       id:3,
@@ -37,7 +37,7 @@ export class NotificationsService {
       content:"Quae dolorem earum veritatis oditseno",
       dateTime: "há 4 hrs.",
       icon:"bi-info-circle text-primary",
-      readed: false
+      readed: true
     },
   ];
 
@@ -52,6 +52,14 @@ export class NotificationsService {
     return this.notificationList.length;
   }
 
+  markAsRead(id: number): void {
+    for (let i = 0; i < this.notificationList.length; i++) {
+      if (this.notificationList[i].id === id) {
+        this.notificationList[i].readed = true;
+        break;
+      }
+    }
+  }
 
 
 }

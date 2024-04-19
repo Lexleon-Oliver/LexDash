@@ -19,23 +19,6 @@
   height: 8px;
 }
 
-@media (min-width: 1200px) {
-
-  #main,
-  #footer {
-    margin-left: 300px;
-  }
-}
-
-
-@media (min-width: 1200px) {
-
-  .toggle-sidebar #main,
-  .toggle-sidebar #footer {
-    margin-left: 0;
-  }
-}
-
 .sidebar-nav {
   padding: 0;
   margin: 0;

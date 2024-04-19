@@ -14,6 +14,16 @@
   --azul-marinho: #012970;
 }
 
+.light-theme h1,
+.light-theme h2,
+.light-theme h3,
+.light-theme h4,
+.light-theme h5,
+.light-theme h6 {
+  color: black;
+}
+
+
 .light-theme{
   background-color: var(--primary-color-light);
   color: var(--secondary-color-light);
@@ -74,10 +84,6 @@
 
 }
 
-.light-theme .notification-item p {
-  color: var(--sixthary-color-light);
-}
-
 .light-theme .nav-profile {
   color: var(--azul-marinho);
 }
@@ -103,10 +109,6 @@
 }
 
 .light-theme .dropdown-menu .dropdown-item:hover {
-  background-color: var(--quinary-color-light);
-}
-
-.light-theme .notification-item:hover {
   background-color: var(--quinary-color-light);
 }
 
@@ -234,6 +236,47 @@
 }
 
 .light-theme .breadcrumb a {
+  color: var(--secondary-color-light);
+}
+
+.light-theme .notification-item p {
+  color: var(--sixthary-color-light);
+}
+
+.light-theme .notification-item:hover {
+  background-color: var(--quinary-color-light);
+}
+
+.light-theme .item-notification{
+  color: var(--sixthary-color-light);
+}
+
+
+.light-theme .not-lida p,
+.light-theme .not-lida small {
+  color: var(--tertiary-color-light);
+}
+
+.light-theme .not-lida {
+  background-color: var(--quinary-color-light);
+}
+
+.light-theme .card-title {
+  color: var(--azul-marinho);
+}
+
+.light-theme .card-header,
+.light-theme .card-footer {
+  border-color: var(--cinza-pastel);
+  background-color: var(--branco-puro);
+  color: var(--quinary-color-light);
+}
+
+.light-theme .card {
+  box-shadow: 0px 0 30px var(--box-shadow-header);
+}
+
+.light-theme .card-subtitle-custom{
   color: var(--secondary-color-light);
 }
 

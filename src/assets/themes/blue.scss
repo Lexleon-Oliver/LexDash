@@ -5,6 +5,7 @@
   --quaternary-color-blue: #003399; /* Azul médio para quaternário */
   --quinary-color-blue: #0066cc; /* Azul mais claro para quinário */
   --sixthary-color-blue: #b3b3ff; /* Azul claro para sextário */
+  --background-card-blue: #002f5e;
 
   --box-shadow-dropdown-menu-blue: rgba(0, 0, 0, 0.2); /* Sombra para menu suspenso */
   --box-shadow-header-blue: rgba(255, 255, 255, 0.1); /* Sombra para cabeçalho */
@@ -12,6 +13,16 @@
   --cinza-pastel-blue: #434343;
   --golden-blue: #FFD484;
 }
+
+.blue-theme h1,
+.blue-theme h2,
+.blue-theme h3,
+.blue-theme h4,
+.blue-theme h5,
+.blue-theme h6 {
+  color: white;
+}
+
 
 .blue-theme{
   background-color: var(--primary-color-blue);
@@ -28,7 +39,7 @@
 
 .blue-theme .dropdown-menu{
   box-shadow: var(--box-shadow-dropdown-menu-blue);
-  background-color: var(--primary-color-blue);
+  background-color: var(--background-card-blue);
   color: var(--secondary-color-blue);
 }
 
@@ -238,4 +249,45 @@
 
 .blue-theme .breadcrumb a {
   color: var(--secondary-color-blue);
+}
+
+
+.blue-theme .card-title {
+  color: var(--golden-blue);
+}
+
+.blue-theme .card-header,
+.blue-theme .card-body,
+.blue-theme .card-footer {
+  border-color: var(--cinza-pastel-blue);
+  background-color: var(--background-card-blue);
+  color: var(--secondary-color-blue);
+}
+
+.blue-theme .card {
+  box-shadow: 0px 0 30px var(--box-shadow-header);
+}
+
+.blue-theme .card-subtitle-custom{
+  color: var(--quinary-color-blue);
+}
+
+.blue-theme .item-notification{
+  color: var(--sixthary-color-blue);
+  background-color: var(--background-card-blue);
+}
+
+.blue-theme .item-notification:hover{
+  color: var(--golden-blue);
+
+}
+
+
+.blue-theme .not-lida p,
+.blue-theme .not-lida small {
+  color: var(--secondary-color-blue);
+}
+
+.blue-theme .not-lida {
+  background-color: var(--quinary-color-blue);
 }

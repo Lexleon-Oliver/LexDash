@@ -1,5 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { ProfileMenuItem } from '../../models/profile-menu-item';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-profile-item',
@@ -10,4 +11,12 @@ import { ProfileMenuItem } from '../../models/profile-menu-item';
 })
 export class ProfileItemComponent {
   @Input() menu!:ProfileMenuItem
+
+  constructor(
+    private router: Router,
+  ){}
+
+  redirect() {
+    this.router.navigate([this.menu.url])
+  }
 }

@@ -2,6 +2,7 @@ import { Routes } from '@angular/router';
 import { Error404PageComponent } from './pages/error-404-page/error-404-page.component';
 import { DashboardPageComponent } from './pages/dashboard-page/dashboard-page.component';
 import { NotificationsPageComponent } from './pages/notifications-page/notifications-page.component';
+import { CardsPageComponent } from './pages/cards-page/cards-page.component';
 
 export const routes: Routes = [
   {
@@ -14,8 +15,13 @@ export const routes: Routes = [
     component: DashboardPageComponent ,
   },
   {
-    path: 'notifications',
+    path: 'users/notifications',
     component: NotificationsPageComponent,
+
+  },
+  {
+    path: 'components/cards',
+    component: CardsPageComponent,
 
   },
   {

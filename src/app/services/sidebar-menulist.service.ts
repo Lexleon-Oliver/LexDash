@@ -27,7 +27,18 @@ export class SidebarMenulistService {
       submenus:[
         {
           label: "Notificações",
-          url: "/notifications"
+          url: "/users/notifications"
+        }
+      ]
+    },
+    {
+      id:"components-nav",
+      label: "Componentes",
+      icon: "bi bi-menu-button-wide",
+      submenus:[
+        {
+          label: "Cards",
+          url: "/components/cards"
         }
       ]
     },
