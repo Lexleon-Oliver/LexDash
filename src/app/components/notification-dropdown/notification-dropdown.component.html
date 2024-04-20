@@ -1,6 +1,6 @@
 <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow notifications">
   <li class="dropdown-header">
-    Você possui {{notificationsService.getNotificationsSize()}} novas notificações
+    Você possui {{notificationsService.getUnreadedNotificationsSize()}} novas notificações
     <a class="elemento-clicavel" (click)="viewAllNotifications()">
       <span class="badge rounded-pill bg-primary p-2 ms-2">Ver todas</span>
     </a>
@@ -9,7 +9,7 @@
     <hr class="dropdown-divider">
   </li>
 
-  @for (notification of notificationList; track $index) {
+  @for (notification of unreadedNotificationList; track $index) {
     <app-notification-item [notification]="notification"></app-notification-item>
   }
 

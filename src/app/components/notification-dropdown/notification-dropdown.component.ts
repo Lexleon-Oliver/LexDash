@@ -15,13 +15,13 @@ import { Router } from '@angular/router';
   styleUrl: './notification-dropdown.component.scss'
 })
 export class NotificationDropdownComponent {
-  notificationList!: NotificationItem[];
+  unreadedNotificationList!: NotificationItem[];
 
   constructor(
     public notificationsService: NotificationsService,
     private router: Router,
   ){
-    this.notificationList= notificationsService.getNotifications();
+    this.unreadedNotificationList= notificationsService.getUnreadedNotifications();
   }
 
   viewAllNotifications() {

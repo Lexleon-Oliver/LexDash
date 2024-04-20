@@ -75,6 +75,19 @@ export class NotificationsService {
     return unreadedNotificationsSize;
   }
 
+  //create a method return all unreaded notifications list
+  getUnreadedNotifications(): NotificationItem[]{
+    let unreadedNotifications:NotificationItem[]=[];
+    for (let i = 0; i < this.notificationList.length; i++) {
+      if (!this.notificationList[i].readed) {
+        unreadedNotifications.push(this.notificationList[i]);
+      }
+    }
+    return unreadedNotifications;
+  }
+
+
+
   //create set selectedNotification method
   setSelectedNotification(notification: NotificationItem): void {
     this.selectedNotification = notification;
