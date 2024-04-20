@@ -6,9 +6,11 @@ import { NotificationItem } from '../models/notification-item';
 })
 export class NotificationsService {
 
+  private selectedNotification!: NotificationItem;
+
   private notificationList: NotificationItem[] = [
     {
-      id:0,
+      id:1,
       title:"Lorem Ipsum",
       content:"Quae dolorem earum veritatis oditseno",
       dateTime: "há 30 min.",
@@ -16,7 +18,7 @@ export class NotificationsService {
       readed: false
     },
     {
-      id:1,
+      id:2,
       title:"Atque rerum nesciunt",
       content:"Quae dolorem earum veritatis oditseno",
       dateTime: "há 1 hr.",
@@ -24,7 +26,7 @@ export class NotificationsService {
       readed: false
     },
     {
-      id:2,
+      id:3,
       title:"Sit rerum fuga",
       content:"Quae dolorem earum veritatis oditseno",
       dateTime: "há 2 hrs.",
@@ -32,7 +34,7 @@ export class NotificationsService {
       readed: true
     },
     {
-      id:3,
+      id:4,
       title:"Dicta reprehenderit",
       content:"Quae dolorem earum veritatis oditseno",
       dateTime: "há 4 hrs.",
@@ -42,7 +44,8 @@ export class NotificationsService {
   ];
 
 
-  constructor() { }
+  constructor() {
+  }
 
   getNotifications(): NotificationItem[] {
     return this.notificationList;
@@ -72,5 +75,14 @@ export class NotificationsService {
     return unreadedNotificationsSize;
   }
 
+  //create set selectedNotification method
+  setSelectedNotification(notification: NotificationItem): void {
+    this.selectedNotification = notification;
+  }
+
+  //create get selectedNotification method
+  getSelectedNotification(): NotificationItem {
+    return this.selectedNotification;
+  }
 
 }

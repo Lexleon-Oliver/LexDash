@@ -9,6 +9,6 @@
     <small>{{notificacao.dateTime}}</small>
   </div>
   <p class="mb-1">
-    {{notificacao.content| slice:0:37}}
+    {{ notificacao.content.length > 34 ? (notificacao.content | slice:0:34) + '...' : notificacao.content }}
   </p>
 </a>

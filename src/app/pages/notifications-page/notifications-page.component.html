@@ -10,23 +10,35 @@
   }"
   [columnClass]="'col-lg-12'"
 >
-  <div class="col-lg-5">
-    <div class="card">
-      @if (notificationService.getNotificationsSize()>0) {
-        <div class="card-body">
-          <div class="list-group">
-            <div class="notification-list-wrapper">
-              @for (notificacao of notificationService.getNotifications(); track $index) {
-                <app-notifications-item-list [notificacao]="notificacao"
-                [class.isNotRead]="!notificacao.readed">
-                </app-notifications-item-list>
-              }
+  <div class="row">
+    <div class="col-lg-4">
+      <div class="card">
+        @if (notificationService.getNotificationsSize()>0) {
+          <div class="card-body">
+            <div class="list-group">
+              <div class="notification-list-wrapper">
+                @for (notificacao of notificationService.getNotifications(); track $index) {
+                  <app-notifications-item-list [notificacao]="notificacao"
+                  [class.isNotRead]="!notificacao.readed">
+                  </app-notifications-item-list>
+                }
+              </div>
             </div>
           </div>
-        </div>
-      }
+        }
+      </div>
     </div>
+    @if (notificationService.getNotificationsSize()>0) {
+      <div class="col-lg-8" >
+        <div class="full-notification-wrapper" appScrollBottom>
+          <app-full-notification-item></app-full-notification-item>
+        </div>
+
+      </div>
+    }
+
   </div>
+
 
 
 </app-page-layout>

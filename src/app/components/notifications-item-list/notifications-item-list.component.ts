@@ -21,6 +21,7 @@ export class NotificationsItemListComponent {
   ){}
 
   onClick() {
+    this.notificationService.setSelectedNotification(this.notificacao);
     this.notificationService.markAsRead(this.notificacao.id);
 
   }
