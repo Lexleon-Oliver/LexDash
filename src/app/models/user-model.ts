@@ -3,5 +3,12 @@ export class UserModel{
   username!: string;
   fullName!: string;
   email!: string;
-  occupation!: string;
+  job!: string;
+  company!: string;
+  phone!: string;
+  address!: string;
+  city!: string;
+  country!: string;
+  about!: string;
+
 }

@@ -18,7 +18,14 @@ export class AuthUserService {
       fullName:"alex leonardo de abreu oliveira",
       email:"lexleonmg@gmail.com",
       username:"@alex.oliveira",
-      occupation: "desenvolvedor java e angular",
+      job: "desenvolvedor java e angular",
+      company: "AlexDev",
+      address:"Rua Prudente P. Barbosa, 125, Ponte Chave",
+      phone:"(32) 991315140",
+      country: "Brazil",
+      city:"Carandaí",
+      about: "Desenvolvedor apaixonado e dedicado, com um forte desejo de aprender e crescer na área de desenvolvimento de software. Tenho experiência trabalhando em alguns projetos e estou ansioso para aplicar minhas habilidades e contribuir para soluções de software inovadoras e impactantes."
+
     };
   }
 
@@ -30,6 +37,11 @@ export class AuthUserService {
   }
 
   getOccupation():string{
-    return this.userLogged.occupation;
+    return this.userLogged.job;
+  }
+
+  //create a method to get the user logged
+  getUserLogged(): UserModel {
+    return this.userLogged;
   }
 }

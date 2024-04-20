@@ -282,7 +282,6 @@
 
 }
 
-
 .blue-theme .not-lida p,
 .blue-theme .not-lida small {
   color: var(--secondary-color-blue);
@@ -290,4 +289,20 @@
 
 .blue-theme .not-lida {
   background-color: var(--quinary-color-blue);
+}
+
+.blue-theme .icon-perfil{
+  color: var(--golden-blue);
+}
+
+
+.blue-theme .nav-item .nav-link {
+  color: var(--golden-blue);
+}
+.blue-theme .nav-item .nav-link.active {
+  color: var(--tertiary-color-blue);
+  background-color: var(--background-card-blue);
+}
+.blue-theme .nav-item .nav-link:hover {
+  color: var(--tertiary-color-blue);
 }

@@ -285,6 +285,17 @@
 }
 
 
+.dark-theme .nav-item .nav-link {
+  color: var(--quinary-color-dark);
+}
+.dark-theme .nav-item .nav-link.active {
+  color: var(--tertiary-color-dark);
+  background-color: var(--primary-color-dark);
+}
+.dark-theme .nav-item .nav-link:hover {
+  color: var(--tertiary-color-dark);
+}
+
 
 
 

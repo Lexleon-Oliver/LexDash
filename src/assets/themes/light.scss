@@ -280,5 +280,19 @@
   color: var(--secondary-color-light);
 }
 
+.light-theme .icon-perfil{
+  color: var(--azul-marinho);
+}
+
+.light-theme .nav-item .nav-link {
+  color: var(--azul-marinho);
+}
+.light-theme .nav-item .nav-link.active {
+  color: var(--tertiary-color-light);
+}
+.light-theme .nav-item .nav-link:hover {
+  color: var(--tertiary-color-light);
+}
+
 
 

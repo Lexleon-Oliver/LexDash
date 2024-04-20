@@ -3,6 +3,7 @@ import { Error404PageComponent } from './pages/error-404-page/error-404-page.com
 import { DashboardPageComponent } from './pages/dashboard-page/dashboard-page.component';
 import { NotificationsPageComponent } from './pages/notifications-page/notifications-page.component';
 import { CardsPageComponent } from './pages/cards-page/cards-page.component';
+import { ProfilePageComponent } from './pages/profile-page/profile-page.component';
 
 export const routes: Routes = [
   {
@@ -17,6 +18,11 @@ export const routes: Routes = [
   {
     path: 'users/notifications',
     component: NotificationsPageComponent,
+
+  },
+  {
+    path: 'users/profile',
+    component: ProfilePageComponent,
 
   },
   {
