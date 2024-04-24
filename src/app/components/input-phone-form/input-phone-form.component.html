@@ -6,8 +6,7 @@
     [placeholder]="placeholder"
     [formControl]="control"
     [ngClass]="getClass()"
-    [mask]="selectedMask"
-    (input)="toggleMask()"
+    [value]="control.value | phone"
   >
   <label [for]="id">{{ label }}</label>
 </div>
