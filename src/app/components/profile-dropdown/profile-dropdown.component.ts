@@ -31,6 +31,11 @@ export class ProfileDropdownComponent {
         url: '/users/notifications'
       },
       {
+        icon: 'bi bi-list-task',
+        label: 'Minhas tarefas',
+        url: '/users/tasks'
+      },
+      {
         icon:"bi bi-box-arrow-right",
         label:"Sair",
         url: "/logout"

@@ -28,6 +28,10 @@ export class SidebarMenulistService {
         {
           label: "Notificações",
           url: "/users/notifications"
+        },
+         {
+          label: "Tarefas",
+          url: "/users/tasks"
         }
       ]
     },
